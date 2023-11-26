@@ -1,0 +1,43 @@
+**Hadoop starting in wsl **
+sudo service ssh status
+sudo service ssh start
+clear
+ls
+./start-dfs.
+./start-dfs.sh
+
+
+** submit JAR
+ hadoop jar ~/hadoop_jars/hadoop_learnings-1.0-SNAPSHOT.jar org.example.Driver /input /output11
+
+hadoop fs -ls /output11
+hadoop fs -cat /output11/part-r-00000
+
+
+
+** Setup **
+wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.2/hadoop-3.3.2.tar.gz
+  ls
+  mkdir ~/hadoop
+  tar -xvzf hadoop-3.3.2.tar.gz -C ~/hadoop
+  ssh localhost
+  sudo apt list --installed | grep openssh-server
+  sudo apt-get install ssh
+  sudo service ssh restart
+  sudo service ssh start
+  sudo apt-get install ssh
+  sudo apt-get update
+  sudo apt-get install ssh
+ cd ~/hadoop/hadoop-3.3.2
+ sudo vi etc/hadoop/hadoop-env.sh
+      export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+  cd hadoop/hadoop-3.3.2/
+  cd sbin/
+  ls
+  ./start-dfs.sh
+  jps
+  ./start-yarn.sh
+  jps
+  hadoop fs -ls
+
